@@ -80,7 +80,7 @@ export default function DeviceDetail({ device, onBack }: DeviceDetailProps) {
                 <div className="bg-gray-50 rounded-xl p-4 space-y-3">
                   {Object.entries(device.specifications).map(([key, value]) => (
                     <div key={key} className="flex justify-between items-start border-b border-gray-200 pb-2 last:border-0">
-                      <span className="text-gray-600 font-medium flex-shrink-0 mr-4">{key}:</span>
+                      <span className="text-gray-600 font-medium shrink-0 mr-4">{key}:</span>
                       <span className="text-gray-900 text-right">{value}</span>
                     </div>
                   ))}
@@ -96,7 +96,7 @@ export default function DeviceDetail({ device, onBack }: DeviceDetailProps) {
                       key={index}
                       className="flex items-start bg-gray-50 rounded-lg p-3"
                     >
-                      <span className="w-2 h-2 bg-[#008C4F] rounded-full mt-1.5 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-[#008C4F] rounded-full mt-1.5 mr-3 shrink-0"></span>
                       <span className="text-gray-700">{feature}</span>
                     </div>
                   ))}
